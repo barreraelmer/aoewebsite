@@ -13,6 +13,10 @@ html {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 .jumbotron {
   background-image: url(../assets/home/color-correct-coffee.jpeg);
   background-size: cover; 
@@ -20,8 +24,58 @@ html {
 
 }
 
-.push-spaces {
-  height: 500px;
+/* Nav bar */
+.navbar-brand {
+  padding: 0;
+  padding-left: 15px;
+}
+header.navbar {
+  padding-bottom: 0;
+  height: 50px;
+  margin: 0;
+  border: none;
+}
+.navbar-inverse {
+  border-radius: 0;
+  border: none;
+  background: #444;
+  color: #fff
+}
+.navbar-right li a {
+  color: #fff !important;
+  font-style: bold;
+  letter-spacing: 2px;
+}
+@media only screen and (max-device-width: 700px) {
+  .navbar-right li {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 2px solid #fff;
+  }
+  .navbar-right li a {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+/* Home content */
+.vertical-center {
+  min-height: 66%;
+  min-height: 66vh;
+  display: flex;
+  align-items: center;
+}
+.openmsg {
+  width: 100%;
 }
 
 
+
+/* Footer */
+.footer-wrapper {
+  color: #fff;
+  width: 100%;
+  background-color: #4a4a4a;
+}
