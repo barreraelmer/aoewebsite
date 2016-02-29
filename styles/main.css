@@ -24,8 +24,15 @@ img {
 
 }
 
+.link {
+ font-size: 16px;
+  color: #f9f9f9;
+}
+
 /* Nav bar */
 .navbar-brand {
+  height: 50%;
+  width: 50%;
   padding: 0;
   padding-left: 15px;
 }
@@ -38,11 +45,11 @@ header.navbar {
 .navbar-inverse {
   border-radius: 0;
   border: none;
-  background: #444;
-  color: #fff
+  background: #262626;
+  color: #f9f9f9;
 }
 .navbar-right li a {
-  color: #fff !important;
+  color: #f9f9f9 !important;
   font-style: bold;
   letter-spacing: 2px;
 }
@@ -50,7 +57,7 @@ header.navbar {
   .navbar-right li {
     margin-left: 15px;
     margin-right: 15px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #f9f9f9;
   }
   .navbar-right li a {
     padding-left: 0;
@@ -60,6 +67,23 @@ header.navbar {
   }
 }
 
+.featurette-heading {
+ margin: 20px 0 0 0; 
+}
+
+.featurette p {
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+}
+
+.footer-heading {
+  margin: 40px 0 0 0; 
+}
+
+.footer-content {
+  margin: 20px 0 20px 0;
+  line-height: 1.5;
+}
 /* Home content */
 .vertical-center {
   min-height: 66%;
@@ -75,7 +99,7 @@ header.navbar {
 
 /* Footer */
 .footer-wrapper {
-  color: #fff;
+  color: #f9f9f9;
   width: 100%;
   background-color: #4a4a4a;
 }
