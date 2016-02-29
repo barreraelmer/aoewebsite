@@ -1,0 +1,31 @@
+@import url(main.css);
+    
+html { 
+    height: 100%; 
+}
+body {
+    height: 100%; 
+}
+#map-container { 
+    height: 40%; 
+}
+
+.hours {
+    text-align: center;
+    margin: 20px;
+    line-height: 250%;
+}
+
+.hours h1 {
+ font-weight: bold;   
+}
+
+.location {
+ margin: 20px;
+    line-height: 140%;
+}
+.location h1 {
+ font-weight: bold;   
+}
+
+
