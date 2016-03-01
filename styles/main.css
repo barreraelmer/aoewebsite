@@ -176,3 +176,39 @@ header.navbar {
   width: 100%;
   background-color: #4a4a4a;
 }
+
+
+/* Dropdown menu */
+.menu, .catering-menu {
+  padding: 5px;
+}
+.dropdown-menu {
+  width: 100%;
+  position: static;
+  float: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  text-shadow: none;
+  line-height: 24px;
+  border-bottom: 2px solid #000;
+  font-size: 18px;
+  text-align: left;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.jumbotron-catering {
+  /* TEMPORARY */
+  background-color: #E8DDBB;
+}
