@@ -147,13 +147,14 @@ header.navbar {
 
 /*Catering*/
 .jumbotron-catering{
-  background-image: url(..assets/catering/catering.jpg);
+  background: url(../assets/catering/catering.jpg);
   background-size: cover; 
   /*color: #e9e9e9;*/
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  color: #fff;
 }
 #cMenu{
   font-size: 50px;
@@ -162,7 +163,7 @@ header.navbar {
 
 /*Second Hrs and Location*/
 .jumbotron-hrs-second{
-  background-image: url(..assets/secondHours/seating.JPG);
+  background: url(../assets/secondHours/seating.JPG);
   background-size: cover; 
   /*color: #e9e9e9;*/
   position: relative;
@@ -210,5 +211,5 @@ header.navbar {
 
 .jumbotron-catering {
   /* TEMPORARY */
-  background-color: #E8DDBB;
+  /*background-color: #E8DDBB;*/
 }
