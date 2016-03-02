@@ -1,32 +1,35 @@
 /* =) */
 
-@import url(https://fonts.googleapis.com/css?family=Cabin:400,700);
+@import url(https://fonts.googleapis.com/css?family=Cabin:300,400,700);
 
 body {
   width: 100%;
-  height: 100%;
   font-family: Cabin, "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 html {
   width: 100%;
-  height: 100%;
 }
 
 img {
   /*max-width: 100%;*/
 }
 
+p, a {
+  font-size: 20px;
+  font-weight: lighter !important;
+}
+
 #index-jumbo {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/coffee_table_2.jpg) no-repeat center center;
   background-size: cover; 
-
+  margin-bottom: 5px;
   color: #e9e9e9;
 }
 
 .link {
- font-size: 16px;
   color: #f9f9f9;
+  font-weight: 200;
 }
 
 /* Nav bar */
@@ -87,6 +90,10 @@ header.navbar {
 
 .featurette-heading {
  margin: 20px 0 0 0; 
+}
+
+.featurette-image {
+  width: 100%;
 }
 
 .featurette p {
@@ -165,7 +172,7 @@ header.navbar {
 
 /*Catering*/
 .jumbotron-catering{
-  background: url(../assets/catering/catering.jpg);
+  background: url(../assets/art_coffee_9170.png) no-repeat center center;
   background-size: cover; 
   /*color: #e9e9e9;*/
   position: relative;
@@ -176,6 +183,12 @@ header.navbar {
 #cMenu{
   font-size: 50px;
   padding-top: 150px;
+  color: #fff;
+}
+
+.jumbotron, .jumbotron-catering, .jumbotron-menu {
+  min-height: 80%;
+  min-height: 80vh;
 }
 
 /*Second Hrs and Location*/
@@ -198,7 +211,7 @@ header.navbar {
 
 /* Dropdown menu */
 .menu, .catering-menu {
-  padding: 5px;
+  padding: 10px;
 }
 .dropdown-menu {
   width: 100%;
@@ -208,11 +221,11 @@ header.navbar {
   -webkit-box-shadow: none;
   border: none;
   padding: 5px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .dropdown-menu p {
-  font-size: 16px;
+  font-size: 18px;
   color: #9b9b9b;
 }
 
@@ -227,11 +240,12 @@ header.navbar {
   border-radius: 0;
   border: none;
   text-shadow: none;
-  line-height: 40px;
+  line-height: 50px;
   border-top: 2px solid #000;
-  font-size: 22px;
+  font-size: 28px;
   text-align: left;
   padding: 5px;
+  padding-top: 12px;
   background-color: #fff;
 }
 
@@ -241,5 +255,13 @@ header.navbar {
 }
 
 #map-container {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  min-height: 500px;
+}
+.container-about {
+  padding: 0;
+}
+.container-about .featurette-heading, .container-about p {
+  padding-left: 15px;
+  padding-right: 15px;
 }
