@@ -1,11 +1,11 @@
-@import url(main.css);
+/*@import url(main.css);*/
     
-html { 
+/*html { 
     height: 100%; 
 }
 body {
     height: 100%; 
-}
+}*/
 #map-container { 
     height: 40%; 
 }
