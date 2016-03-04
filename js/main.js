@@ -16,14 +16,19 @@ function update_hours(d) {
         console.log("We're closed");
         $("#msg").text("We're closed");
     }
-    else if (hr >= 7 && hr < 16) {
-        console.log("Open til 4 today");
-        $("#msg").text("Open til 4 today");
+    else if (date == 5) {   // Friday
+        if ((hr >= 7 && hr < 16) || (hr == 16 && min < 30)) {
+            console.log("Open til 4:30 today");
+            $("#msg").text("Open til 4:30 today");
+        }
+    }
+    else if (hr >= 7 && hr < 17) {
+        console.log("Open til 5 today");
+        $("#msg").text("Open til 5 today");
 
     }
     else { 
         console.log("We're closed");
         $("#msg").text("We're closed");
     }
-
 }
