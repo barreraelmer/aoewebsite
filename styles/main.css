@@ -1,10 +1,11 @@
 /* =) */
 
-@import url(https://fonts.googleapis.com/css?family=Cabin:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700);
 
 body {
   width: 100%;
-  font-family: Cabin, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Work Sans', "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-top: 40px;
 }
 
 html {
@@ -18,10 +19,12 @@ img {
 a:hover {
   color: #E8DDBB;
 }
-
+h1, h2 {
+  font-weight: 300;
+}
 p, a {
   font-size: 20px;
-  font-weight: lighter !important;
+  font-weight: 300;
 }
 
 #index-jumbo {
@@ -39,19 +42,24 @@ p, a {
 /* Nav bar */
 .navbar-brand {
   height: 50%;
-  width: 50%;
   padding: 0;
   padding-left: 15px;
 }
 .navbar-header {
 
 }
+.navbar-collapse {
+  border: none;
+  background-color: #262626;
+}
 header.navbar {
-  padding-bottom: 0;
-
+  font-size: 18px;
   height: 40px;
   margin: 0;
   border: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 10;
 }
 .navbar-brand {
@@ -61,12 +69,23 @@ header.navbar {
   border-radius: 0;
   border: none;
   background: #262626;
-  color: #f9f9f9;
+  transition-property: all;
+  transition-duration: .5s;
 }
 .navbar-right li a {
+  letter-spacing: 1px;
+  font-weight: 300 !important;
+  font-size: 16px;
+  text-shadow: none !important;
   color: #f9f9f9 !important;
-  font-style: bold;
-  letter-spacing: 2px;
+}
+.navbar-right li a:hover {
+}
+.white {
+  color: #f9f9f9 !important;
+}
+.green {
+  color: #366635 !important;
 }
 @media only screen and (max-device-width: 700px) {
   .navbar-right li {
@@ -78,23 +97,37 @@ header.navbar {
   .navbar-right li a {
     padding-left: 0;
     padding-right: 0;
-    font-size: 26px;
+    font-size: 18px;
     line-height: 36px;
   }
   .navbar-right {
     padding-bottom: 10px;
   }
-  .navbar-toggle .icon-bar {
+  
+}
+.navbar-toggle .icon-bar {
     height: 3px;
-  }
-  .navbar-toggle {
-    border: none;
-  }
+    background-color: #f9f9f9 !important;
+}
+.navbar-toggle:hover{
+  transition-property: all;
+  transition-duration: .5s;
+  background-color: #888 !important;
+}
+.navbar-toggle:focus {
+  background-color: inherit !important;
+}
+.navbar-toggle {
+  border: none;
 }
 .container {
   width: inherit;
 }
 
+.featurette {
+  display: inline-block;
+  min-width: 300px;
+}
 .featurette-heading {
  margin: 20px 0 0 0; 
 }

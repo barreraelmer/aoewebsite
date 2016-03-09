@@ -23,7 +23,7 @@
 </head>
 
 <body>
- <header class="navbar">
+   <header class="navbar">
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -43,10 +43,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="food_drink.html">FOOD & DRINK</a></li>
-                    <li><a href="hours_location.html">HOURS & LOCATION</a></li>
-                    <li><a href="catering.html">CATERING</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="food_drink.html">Food & Drink</a></li>
+                    <li><a href="hours_location.html">Hours & Location</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
                 </ul>
 
             </div><!-- /.navbar-collapse -->
@@ -198,6 +199,35 @@
             </ul>
         </ul>
     </div>
+</div>
+
+<div class="jumbotron" id="contact-form">
+
+    <div class="contact-wrapper">
+
+        <div class="phone-email-wrapper">
+            <h2>Contact Us</h2><br>
+            <h4>Phone</h4>
+            <p>(858) 822-4547</p>
+
+            <h4>Email</h4>
+            <p>artofespresso1@gmail.com</p>
+        </div>
+
+        <div class="form-wrapper">
+            <!-- Mailto email intentionally wrong while in development mode -->
+            <form action="MAILTO:artofespresso1111@gmail.com" method="post" enctype="text/plain">
+
+                <input type="text" name="name" placeholder="Your Name"><br>
+
+                <input type="text" name="mail" placeholder="Your Email"><br>
+
+                <textarea name="message" placeholder="Message" id="form-msg"></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+
 </div>
 <!-- -->
 <!--footer-->

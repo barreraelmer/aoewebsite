@@ -1,8 +1,12 @@
 // Monday-Friday: 7a-4p
 // Saturday-Sunday: Closed
 $(document).ready( function() {
+    // $(".navlink").addClass("white");
     var d = new Date();
     update_hours(d);
+    $(window).scroll(function() {
+       
+    });
 });
 
 function update_hours(d) {
@@ -32,3 +36,13 @@ function update_hours(d) {
         $("#msg").text("We're closed");
     }
 }
+
+// function nav_update() {
+//     if ($(window).scrollTop() > 0) {
+//         $(".navbar-inverse").css({"background":"#fff"});
+//         $(".navlink").addClass("green").removeClass("white");
+//     } else {
+//         $(".navbar-inverse").css({"background":"transparent"});
+//         $(".navlink").removeClass("green").addClass("white");
+//     }
+// }
