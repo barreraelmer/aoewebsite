@@ -23,52 +23,64 @@
 </head>
 
 <body>
-   <header class="navbar">
+ <header class="navbar">
 
-        <nav class="navbar-inverse">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">        
-                        <img alt="Brand" src="assets/home/AOE%20Logo%20final.png" height="40px">
-                    </a>
-                </div>
+    <nav class="navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">        
+                    <img alt="Brand" src="assets/home/AOE%20Logo%20final.png" height="40px">
+                </a>
+            </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="navlink" href="food_drink.html">Food & Drink</a></li>
-                        <li><a class="navlink" href="hours_location.html">Hours & Location</a></li>
-                        <li><a class="navlink" href="catering.html">Catering</a></li>
-                        <li><a class="navlink" href="contact.html">Contact</a></li>
-                    </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="navlink" href="food_drink.html">Food & Drink</a></li>
+                    <li><a class="navlink" href="hours_location.html">Hours & Location</a></li>
+                    <li><a class="navlink" href="catering.html">Catering</a></li>
+                    <li><a class="navlink" href="contact.html">Contact</a></li>
+                </ul>
 
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
-    </header>
+</header>
 
-<div class="jumbotron-catering">
+<div class="jumbotron-menu">
     <div class="container push-spaces vertical-center">
         <h1 id="cMenu">Catering</h1>
         <div class="cateringInfo">
             <p>Would you like us to cater your next event?
-            Checkout our catering menu below!</p>  
+                Checkout our catering menu below!</p>  
         </div>    
         <hr>
     </div>    
 </div>
 
-<div class="catering-menu">
-    <div class="menu-section">
-        <h4 class="menu-header">Salads</h4>
+    <div class="catering-menu menu">
+    <div class="sidebar-wrapper">
+     <div class="menu-sidebar">
+        <ul>
+            <li>Espresso Drinks</li>
+            <li>Blended Espresso Shakes</li>
+            <li>Cold Coffee Drinks</li>
+            <li>Coffee</li>
+            <li>Non-Coffee Drinks</li>
+            <li>Bites</li>
+        </ul>
+
+        </div></div><div class="menu-section-wrapper">
+        <div class="menu-section">
+            <h4 class="menu-header">Salads</h4>
             <ul>
                 <li>Chef Salad</li>
                 <p>Fresh greens, ham, turkey, hard-boiled egg, tomatoes, swiss and cheddar cheeses with homemade Thousand Island dressing</p>
@@ -81,139 +93,125 @@
                 <li>Spring Salad</li>  
                 <p>Fresh greens, cherry tomatoes, candied walnuts, and your choice of feta or blue cheese, dressed in our house vinaigrette. Available with grilled chicken, chicken salad, or tuna salad on top</p>  
             </ul>  
-    </div> 
-
-    <!--
-    <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" id="cateringSalads" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Salads
-            <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="cateringSalads">
-                   
-        </ul>
-    </div>
--->
-
-
+        </div> 
     <div class="menu-section">
         <h4 class="menu-header">Sandwiches</h4>
-            <ul>
-                <li>Turkey on Mulitgrain</li>
-                <p>Lettace, tomato, and swiss cheese topped with mustard and mayonnaise</p>
-                <li>Simple Turkey on Sour Dough</li>   
-                <p>Lettace, tomato, and swiss cheese with mustard and mayonnaise</p>
-                <li>Hamm & Swiss on Sourdough</li>  
-                <p>Lettace, tomato, red onion, swiss cheese with mustard and mayonnaise</p> 
-                <li>Spicy Turkey Club</li>   
-                <p>Bacon, tomato, seasonal greens, Siracha mayonnaise served on three sourdough slices</p> 
-                <li>Chicken Pesto on Focaccia</li> 
-                <p>Fresh mozzarella, tomato, and spring greens</p>     
-                <li>Tuna Salad on Ciabatta</li>    
-                <p>Flaky albacore tossed in a light dressing with carrots and red onions. Served with mustard and mayonnaise</p>
-                <li>Egg Salad</li>
-                <p>Served with seasonal greens on levain</p> 
-                <li>The Vegetarian</li>  
-                <p>Cucumber, tomato, avocado, swiss cheese, house-made hummus, and daikon sprouts on levian</p>
-            </ul>
-            <li>Croissant Sandwiches</li>
-            <ul>    
-                <li>Turkey & Avocado Croissant</li>  
-                <p>Served with spring greens, tomato, and a herb goat cheese spread</p> 
-                <li>Ham & Swiss Croissant</li>   
-                <p>Served with spring mix, mustard, and mayonnaise</p>       
-            </ul>
-            <li>Baguettes</li>    
-            <ul>
-                <li>Tomato, Mozzarella, and Basil</li>
-                <p>Served on a French baguette</p>
-                <li>Brie & Tomato</li>  
-                <p>Served with fresh pesto, tomatoes, and spring greens</p>  
-                <li>Turkey Baguette</li>    
-                <p>Turkey, tomatoes, red onion, pepperoncini, mixed greens, mustard, and mayonnaise</p>
-                <li>Italian Baguette</li>   
-                <p>Salami, turkey, provolone cheese, tomatoes, mixed greens, mustard, and mayonnaise</p> 
-            </ul>
-        </ul> 
-    </div>
-
-    <div class="menu-section">
-        <h4 class="menu-header">Specialty Items</h4>
-            <ul>
-                <li>Fresh Seasonal Fruit Platter</li>
-                <li>Mixed Olives</li>
-                <li>Mixed Fruit & Cheese Platter</li>
-                <li>Chips & Homemade Guacamole</li>
-                <li>Pita Triangles</li>
-                <p>Comes with your choice of hummus, baba ganoush, or tzatziki dip</p>
-            </ul>
+        <ul>
+            <li>Turkey on Mulitgrain</li>
+            <p>Lettace, tomato, and swiss cheese topped with mustard and mayonnaise</p>
+            <li>Simple Turkey on Sour Dough</li>   
+            <p>Lettace, tomato, and swiss cheese with mustard and mayonnaise</p>
+            <li>Hamm & Swiss on Sourdough</li>  
+            <p>Lettace, tomato, red onion, swiss cheese with mustard and mayonnaise</p> 
+            <li>Spicy Turkey Club</li>   
+            <p>Bacon, tomato, seasonal greens, Siracha mayonnaise served on three sourdough slices</p> 
+            <li>Chicken Pesto on Focaccia</li> 
+            <p>Fresh mozzarella, tomato, and spring greens</p>     
+            <li>Tuna Salad on Ciabatta</li>    
+            <p>Flaky albacore tossed in a light dressing with carrots and red onions. Served with mustard and mayonnaise</p>
+            <li>Egg Salad</li>
+            <p>Served with seasonal greens on levain</p> 
+            <li>The Vegetarian</li>  
+            <p>Cucumber, tomato, avocado, swiss cheese, house-made hummus, and daikon sprouts on levian</p>
         </ul>
+        <h5>Croissant Sandwiches</h5>
+        <ul>    
+            <li>Turkey & Avocado Croissant</li>  
+            <p>Served with spring greens, tomato, and a herb goat cheese spread</p> 
+            <li>Ham & Swiss Croissant</li>   
+            <p>Served with spring mix, mustard, and mayonnaise</p>       
+        </ul>
+        <h5>Baguettes</h5>    
+        <ul>
+            <li>Tomato, Mozzarella, and Basil</li>
+            <p>Served on a French baguette</p>
+            <li>Brie & Tomato</li>  
+            <p>Served with fresh pesto, tomatoes, and spring greens</p>  
+            <li>Turkey Baguette</li>    
+            <p>Turkey, tomatoes, red onion, pepperoncini, mixed greens, mustard, and mayonnaise</p>
+            <li>Italian Baguette</li>   
+            <p>Salami, turkey, provolone cheese, tomatoes, mixed greens, mustard, and mayonnaise</p> 
+        </ul>
+    </ul> 
     </div>
 
-    <div class="menu-section">
-        <h4 class="menu-header">Pastries</h4>
-            <ul>
-                <li>Assortment of freshly baked breakfast pastries</li>
-                <p>Danishes, croissants, coffee cakes, scones, cinnamon rolls, bear claws, breads, brownies</p>
-                <li>Assorted Muffins</li>  
-                <p>Regular or bran</p>  
-                <li>Assorted Bagels</li>  
-                <p>Comes with cream cheese, butter, jam</p> 
-                <li>Assorted cookies</li>     
-            </ul>
-        </ul> 
-    </div>
-
-    <div class="menu-section">
-        <h4 class="menu-header">Snacks</h4>
-            <ul>
-                <li>Seasonal Fresh Fruit</li>
-                <li>Assorted Yogurts</li>
-                <p>Strawberry banana, raspberry, peach</p>
-            </ul>
-        </ul> 
-    </div>
-
-    <div class="menu-section">
-               <h4 class="menu-header">Coffee</h4>
-               <ul>
-                   <li>Assorted Teas</li>
-                   <li>Juice</li>
-                   <p>Cranberry, orange, apple</p>
-                   <li>Water</li>
-                   <li>Sodas</li> 
-                   <li>Snapples</li>  
-                   <li>Perrier</li> 
-                   <li>Orangina</li>
-               </ul>  
-           </div>
+<div class="menu-section">
+    <h4 class="menu-header">Specialty Items</h4>
+    <ul>
+        <li>Fresh Seasonal Fruit Platter</li>
+        <li>Mixed Olives</li>
+        <li>Mixed Fruit & Cheese Platter</li>
+        <li>Chips & Homemade Guacamole</li>
+        <li>Pita Triangles</li>
+        <p>Comes with your choice of hummus, baba ganoush, or tzatziki dip</p>
+    </ul>
+</ul>
 </div>
-<!-- -->
-    <!--footer-->
-    <div class="footer-wrapper">
-        <div class="container footer">
 
-            <div class="footer-inline">
-                <h4 class="footer-heading">The Art of Espresso</h4>
-                <p class="footer-content">9500 Gilman Dr, La Jolla, CA 92093 <br>
-                    <a href="mailto:asdf@gmail.com">artofespresso1@gmail.com</a><br> 
-                    (858) 822-4547<br>
-                </p>
-            </div><div class="footer-inline">
-                <p class="footer-content">Monday - Thursday<br>
-                    7 am - 5 pm<br>
-                </p>
-                <p class="footer-content">
-                    Friday<br>
-                    7 am - 4:30 pm<br>
-                </p>
-                <p class="footer-content">
-                    Saturday - Sunday<br>
-                    Closed 
-                </p>
-            </div>
-        </div>
+<div class="menu-section">
+    <h4 class="menu-header">Pastries</h4>
+    <ul>
+        <li>Assortment of freshly baked breakfast pastries</li>
+        <p>Danishes, croissants, coffee cakes, scones, cinnamon rolls, bear claws, breads, brownies</p>
+        <li>Assorted Muffins</li>  
+        <p>Regular or bran</p>  
+        <li>Assorted Bagels</li>  
+        <p>Comes with cream cheese, butter, jam</p> 
+        <li>Assorted cookies</li>     
+    </ul>
+</div>
+
+<div class="menu-section">
+    <h4 class="menu-header">Snacks</h4>
+    <ul>
+        <li>Seasonal Fresh Fruit</li>
+        <li>Assorted Yogurts</li>
+        <p>Strawberry banana, raspberry, peach</p>
+    </ul>
+</div>
+
+<div class="menu-section">
+ <h4 class="menu-header">Coffee</h4>
+ <ul>
+     <li>Assorted Teas</li>
+     <li>Juice</li>
+     <p>Cranberry, orange, apple</p>
+     <li>Water</li>
+     <li>Sodas</li> 
+     <li>Snapples</li>  
+     <li>Perrier</li> 
+     <li>Orangina</li>
+ </ul>  
+</div>
+</div>
+</div>
+
+<!-- -->
+<!--footer-->
+<div class="footer-wrapper">
+    <div class="container footer">
+
+        <div class="footer-inline">
+            <h4 class="footer-heading">The Art of Espresso</h4>
+            <p class="footer-content">9500 Gilman Dr, La Jolla, CA 92093 <br>
+                <a href="mailto:asdf@gmail.com">artofespresso1@gmail.com</a><br> 
+                (858) 822-4547<br>
+            </p>
+        </div><div class="footer-inline">
+        <p class="footer-content">Monday - Thursday<br>
+            7 am - 5 pm<br>
+        </p>
+        <p class="footer-content">
+            Friday<br>
+            7 am - 4:30 pm<br>
+        </p>
+        <p class="footer-content">
+            Saturday - Sunday<br>
+            Closed 
+        </p>
     </div>
+</div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->

@@ -260,8 +260,7 @@ header.navbar {
   overflow: hidden;
 }
 .menu {
-  background: url(../assets/menu/rusticCoffee.jpg) no-repeat center center;
-  background-size: cover;
+  background-color: #262626;
 }
 .menu-section {
   background-color: white;
