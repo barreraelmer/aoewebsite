@@ -679,6 +679,9 @@ h4 {
   #hours-dank {
     margin-top: 230px;
   }
+  .sidebar-hours {
+    margin-top: 60px;
+  }
 }
 .location {
   background-color: white;
