@@ -1,10 +1,10 @@
 /* =) */
 
-/*@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700); */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700); 
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 body {
   width: 100%;
-  font-family: 'Karla', "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Work Sans', 'Karla', "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin-top: 40px;
 }
 
@@ -15,13 +15,20 @@ html {
 img {
   /*max-width: 100%;*/
 }
-
+a {
+  color: inherit;
+}
+ul {
+  padding: 0;
+}
 a:hover {
-  color: #E8DDBB;
+  color: inherit;
+  text-decoration: none;
   cursor: pointer;
 }
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 h1, h2, p, a {
   font-weight: 300;
@@ -291,8 +298,9 @@ header.navbar {
   background-color: #262626;
 }
 .menu-section {
-  background-color: white;
+  background-color: #f9f9f9;
   padding: 15px;
+  padding-top: 10px;
   margin: 10px;
 }
 .menu-section-wrapper {
@@ -305,7 +313,7 @@ header.navbar {
   z-index: 900;
 }
 .menu-sidebar, .sidebar-wrapper {
-  background-color: white;
+  background-color: #f9f9f9;
   height: 300px;
   width: 285px;
   z-index: 900;
@@ -343,6 +351,10 @@ header.navbar {
   list-style-type: none;
   padding: 0;
 }
+.menu-sidebar ul li {
+  margin-bottom: 5px;
+  border-bottom: 2px solid #e8ddbb;
+}
 @media screen and (max-width: 850px) {
   .menu-sidebar, .sidebar-wrapper {
     width: 225px;
@@ -355,10 +367,56 @@ header.navbar {
   .menu-sidebar, .sidebar-wrapper {
     display: none;
   }
+  .menu {
+    padding: 0 !important;
+  }
   .menu-section-wrapper {
     margin-left: 0px;
     margin-top: 0px;
+    width: 100%;
   }
+  .menu-section-content {
+    display: none;
+    padding: 15px;
+    padding-top: 0;
+  }
+  .menu-section h4 {
+    margin: 0;
+    padding: 15px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 4px solid #e8ddbb;
+  }
+
+ /* .menu-section-content ul li:nth-child(1) {
+    margin-top: 0;
+  }*/
+  .menu-section-content p {
+    color: #808080;
+    font-size: 14px;
+  }
+  .menu-section {
+    padding: 0;
+  }
+  .menu-link:hover {
+    cursor: pointer;
+  }
+}
+.menu h4 {
+    font-weight: 400;
+}
+.menu-section h4 {
+  line-height: 40px;
+  font-size: 22px;
+}
+.menu-section-content ul {
+  text-indent: 0;
+  list-style-type: none;
+}
+.menu-section-content ul li {
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 /* Contact page */
