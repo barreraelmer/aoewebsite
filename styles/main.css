@@ -259,10 +259,39 @@ header.navbar {
   height: 100%;
   overflow: hidden;
 }
-
+.menu-sidebar {
+  background-color: #fff;
+}
+.menu {
+  background: url(../assets/menu/rusticCoffee.jpg) no-repeat center center;
+  background-size: cover;
+}
+.menu-section {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+}
+.menu-section-wrapper {
+  max-width: 600px;
+}
+.menu-sidebar, .menu-section-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+.menu-sidebar {
+  background-color: white;
+  height: 500px;
+  width: 300px;
+  z-index: 900;
+  margin: 10px;
+}
 #food-drink{
   font-size: 50px;
   padding-top: 150px;
+}
+.menu-sidebar ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 
@@ -380,7 +409,7 @@ header.navbar {
   margin: 0;
 }
 .hours {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/tent.png) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/location.png) no-repeat center center;
   background-size: cover;
   margin: 0;
   padding: 15px;
