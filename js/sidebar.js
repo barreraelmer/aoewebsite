@@ -12,7 +12,7 @@ $(window).scroll(() => {
         topp = $(wrapper).height() - $(sidebar).height() - parseInt($(wrapper).css("padding")) - 30;
         $(sidebar).css({"position": "static", "margin-top": topp});
     }
-    else if ($(window).scrollTop() + top_offset > $(".jumbotron-menu").height() - 255) {
+    else if ($(window).scrollTop() + top_offset > $(".jumbotron-menu").height() - 240) {
         $(sidebar).css({"position": "fixed", "top": mt, "margin-top": "0px"});
     }
     else {
