@@ -333,6 +333,9 @@ body {
   width: 285px;
   z-index: 900;
 }
+.menu-section h5 {
+  font-size: 22px;
+}
 .contact-section-wrapper {
   margin-left: 300px;
   margin-top: -300px;
@@ -368,6 +371,9 @@ body {
   }
   .contact-section-wrapper {
     margin: 0;
+  }
+  .phone-email-wrapper, .form-wrapper {
+    max-width: none !important;
   }
 }
 .menu-sidebar {
@@ -532,7 +538,7 @@ body {
 .form-wrapper input {
   width: 100%;
 }
-.form-wrapper input[type=text], .form-wrapper textarea {
+.form-wrapper input[type="text"], .form-wrapper textarea {
   line-height: 35px;
 }
 .form-wrapper textarea#form-msg {
@@ -546,8 +552,13 @@ body {
   padding: 4px;
   margin-top: 5px;
   margin-bottom: 5px;
-}
+  /*background-color: #fff;*/
+  /*border: 2px solid #262626;*/
 
+}
+.form-wrapper input[type="submit"] {
+  background-color: #bbb !important;
+}
 /*Catering*/
 .jumbotron-catering{
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/art_coffee_9170.png) no-repeat center center;
