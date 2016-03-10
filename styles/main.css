@@ -573,6 +573,7 @@ h4 {
 }
 .footer {
   max-width: 800px;
+  padding: 8px;
   margin: auto;
 }
 
