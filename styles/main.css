@@ -343,11 +343,23 @@ body {
   color: #262626;
   padding: 15px;
 }
+.contact-section-wrapper h4, .contact-sidebar h5 {
+  font-size: 18px;
+}
+.contact-section-wrapper p {
+  font-size: 16px;
+}
 .contact-menu {
   margin-top: 200px;
 }
 @media screen and (max-width: 700px) {
 
+  .contact-section-wrapper h4, .contact-sidebar h5 {
+    font-size: 18px;
+  }
+  #sidebar-contact h4:nth-child(3) {
+    margin-top: 20px !important;
+  }
   .contact-section-wrapper {
     margin: 0;
   }
@@ -428,6 +440,12 @@ body {
   .menu {
     padding: 0 !important;
   }
+  .vertical-center {
+    padding: 10px;
+  }
+  .vertical-wrap {
+    padding: 5px;
+  }
   .menu-section-wrapper {
     margin-left: 0px;
     margin-top: 0px;
@@ -484,19 +502,16 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/contact.png) no-repeat center center;
   background-size: cover;
   color: white;
-  height: 80vh;
-  margin-bottom: -50vh;
+  height: 70vh;
+  margin-bottom: -60vh;
 }
 .contact-wrapper {
-  margin: 20px;
+  margin: 10px;
+
 }
 
-.jumbotron-contact .container {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 #h1contact {
-  margin-top: 100px;
+  margin-top: 180px;
   font-size: 50px;
 }
 .phone-email-wrapper, .form-wrapper {
@@ -611,24 +626,57 @@ h4 {
 .row {
   margin: 0;
 }
-.hours {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/location.png) no-repeat center center;
+.jumbotron-hours {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/location.png) no-repeat center center;
   background-size: cover;
   margin: 0;
-  padding: 15px;
   color: white;
+  height: 80vh;
+  margin-bottom: -70vh;
 }
-.hour {
-  display: inline-block;
-  width: 33%;
+.jumbotron-hours h1 {
+  font-size: 50px;
+  margin-top: 170px;
+}
+.sidebar-hours {
+  padding: 15px;
+}
+#sidebar-hours {
+  background-color: #fff;
+  width: 285px;
+}
+#section-hours {
+  margin-top: -315px;
+}
+.hours h2 {
+  margin-top: 0;
+}
+.hours h4 {
+  font-size: 22px;
+}
+.hours p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+  #section-hours {
+    margin-top: 10px;
+  }
+  #sidebar-hours {
+    width: 100%;
+  }
+  .hour {
+    display: inline-block;
+    width: 33%;
+  }
 }
 @media screen and (max-width: 500px) {
   .hour {
     display: block;
-    width: 100%;
+    width: auto;
   }
-  .hours {
-    text-align: center;
+  #hours-dank {
+    margin-top: 230px;
   }
 }
 .location {
