@@ -5,7 +5,7 @@ $(document).ready( function() {
     var d = new Date();
     update_hours(d);
     $(window).scroll(function() {
-       
+
     });
 });
 
@@ -15,7 +15,7 @@ function update_hours(d) {
     var date = d.getDate(); // 0 - 6, sunday=0, saturday=6
     console.log(hr);
     console.log(min);
-    
+
     if (date == 0 || date == 6) {
         console.log("We're closed");
         $("#msg").text("We're closed");
@@ -37,12 +37,29 @@ function update_hours(d) {
     }
 }
 
-// function nav_update() {
-//     if ($(window).scrollTop() > 0) {
-//         $(".navbar-inverse").css({"background":"#fff"});
-//         $(".navlink").addClass("green").removeClass("white");
-//     } else {
-//         $(".navbar-inverse").css({"background":"transparent"});
-//         $(".navlink").removeClass("green").addClass("white");
-//     }
-// }
+
+wrapper = $(".menu");
+sidebar = $(".menu-sidebar");
+navbar = $(".navbar");
+$(window).scroll(() => {
+
+    // Temporary cancellation of this feature on default /browse page, change this
+    // if (window.location.href.match(/browse\/.+\?/)) {
+    mt = $(".navbar").height();
+    stop = $(wrapper).offset().top + $(wrapper).height() - $(sidebar).height() - parseInt($(sidebar).css("top")) - 10;
+    if ($(window).scrollTop() > stop) { // Bottomed
+        console.log("yes");
+        topp = $(wrapper).height() - $(sidebar).height() - parseInt($(wrapper).css("padding"));
+        $(sidebar).css({"position": "static", "margin-top": topp});
+    }
+    else if ($(window).scrollTop() > $(".jumbotron-menu").height()) {
+        $(sidebar).css({"position": "fixed", "top": mt, "margin-top": "10px"});
+    }
+    else {
+        mt = ($(wrapper).height() - $(wrapper).offset().top - 2*$(sidebar).height()).toString() + "px";
+        $(sidebar).css({"position": "static", "margin-top": "10px"});
+        console.log("jank");
+    }
+});
+
+
