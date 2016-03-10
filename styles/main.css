@@ -18,6 +18,10 @@ img {
 
 a:hover {
   color: #E8DDBB;
+  cursor: pointer;
+}
+a:visited {
+  text-decoration: none;
 }
 h1, h2, p, a {
   font-weight: 300;
@@ -43,10 +47,12 @@ h1, h2, p, a {
 .navbar-brand {
   height: 50%;
   padding: 0;
-  padding-left: 15px;
 }
 .navbar-header {
 
+}
+.nav-active {
+  border-bottom: 2px solid #e8ddbb;
 }
 .navbar-collapse {
   border: none;
@@ -60,7 +66,8 @@ header.navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
+  box-shadow: 0px 2px 10px black;
 }
 .navbar-brand {
   margin-top: 5px;
@@ -72,6 +79,7 @@ header.navbar {
   transition-property: all;
   transition-duration: .5s;
 }
+
 .navbar-right li a {
   letter-spacing: 1px;
   font-weight: 300 !important;
@@ -81,27 +89,29 @@ header.navbar {
 }
 .navbar-right li a:hover {
 }
-.white {
-  color: #f9f9f9 !important;
+.navlink:hover {
+  color: #e8ddbb !important;
+  /*border-bottom: 2px solid #e8ddbb;*/
 }
-.green {
-  color: #366635 !important;
-}
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width:767px) {
+  .navlink {
+    border-bottom: none;
+  }
+  .navlink:hover {
+    border-bottom: none;
+  }
   .navbar-right li {
     margin-left: 15px;
     margin-right: 15px;
-    border-bottom: 2px solid #E8DDBB;
-    padding-top: 10px;
+  }
+  .navbar-brand {
+    padding-left: 15px;
   }
   .navbar-right li a {
     padding-left: 0;
     padding-right: 0;
     font-size: 18px;
     line-height: 36px;
-  }
-  .navbar-right {
-    padding-bottom: 10px;
   }
   
 }
@@ -196,6 +206,9 @@ header.navbar {
 .container-about {
   max-width: 100%;
 }
+.container-fluid {
+  max-width: 1000px;
+}
 
 .featurette-image {
   width: 100%;
@@ -222,10 +235,10 @@ header.navbar {
 }
 @media screen and (max-width: 600px) {
   .footer-inline {
-  display: block;
-  width: 99%;
-  margin: 0.5%;
-}
+    display: block;
+    width: 99%;
+    margin: 0.5%;
+  }
 }
 
 .footer-content {
@@ -242,6 +255,12 @@ header.navbar {
   min-height: 66vh;
   display: flex;
   align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.vertical-wrap {
+  margin: auto;
+  max-width: 1000px;
 }
 .openmsg {
   width: 100%;
@@ -251,13 +270,14 @@ header.navbar {
 
 /*Food & Drink content*/
 .jumbotron-menu{
-  background: url(../assets/menu/2_cups_9088.png) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/menu/2_cups_9088.png) no-repeat center center;
   background-size: cover; 
   color: #e9e9e9;
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 0;
 }
 .menu {
   background-color: #262626;
@@ -268,22 +288,42 @@ header.navbar {
   margin: 10px;
 }
 .menu-section-wrapper {
-  max-width: 600px;
-  margin-left: 15px;
+  margin-left: 300px;
+  margin-top: -300px;
 }
 .sidebar-wrapper, .menu-section-wrapper {
   display: inline-block;
   vertical-align: top;
-}
-.menu-sidebar {
-  margin: 10px;
+  z-index: 900;
 }
 .menu-sidebar, .sidebar-wrapper {
   background-color: white;
-  height: 500px;
-  width: 300px;
+  height: 300px;
+  width: 285px;
   z-index: 900;
 }
+.menu-sidebar {
+  margin: 10px;
+  /*padding: 15px;*/
+  background-color: #262626
+}
+.menu-sidebar>ul li {
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #262626;
+  background-color: #fff;
+}
+.menu-sidebar>ul li:hover {
+  background-color: #e8ddbb;
+}
+.menu-sidebar a {
+  color: #262626;
+}
+.menu-sidebar a:hover {
+  text-decoration: none;
+}
+
 .sidebar-wrapper {
   background: transparent;
 }
@@ -295,8 +335,23 @@ header.navbar {
   list-style-type: none;
   padding: 0;
 }
-
-
+@media screen and (max-width: 850px) {
+  .menu-sidebar, .sidebar-wrapper {
+    width: 225px;
+  }
+  .menu-section-wrapper {
+    margin-left: 240px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .menu-sidebar, .sidebar-wrapper {
+    display: none;
+  }
+  .menu-section-wrapper {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
 
 /* Contact page */
 .jumbotron#contact-form {
@@ -353,8 +408,8 @@ header.navbar {
 }
 
 .jumbotron, .jumbotron-catering, .jumbotron-menu {
-  min-height: 80%;
-  min-height: 80vh;
+  min-height: 60%;
+  min-height: 60vh;
 }
 
 /* Footer */

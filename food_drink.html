@@ -43,7 +43,7 @@
            <!-- Collect the nav links, forms, and other content for toggling -->
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-               <li><a class="navlink" href="food_drink.html">Food & Drink</a></li>
+               <li><a class="navlink nav-active" href="food_drink.html">Food & Drink</a></li>
                <li><a class="navlink" href="hours_location.html">Hours & Location</a></li>
                <li><a class="navlink" href="catering.html">Catering</a></li>
                <li><a class="navlink" href="contact.html">Contact</a></li>
@@ -63,18 +63,20 @@
 </div>
 
 <div class="menu">
-    <div class="sidebar-wrapper">
+    <div class="vertical-wrap">
+    <div class="sidebar-wrapper hide-on-mobile">
      <div class="menu-sidebar">
         <ul>
-            <li>Espresso Drinks</li>
-            <li>Blended Espresso Shakes</li>
-            <li>Cold Coffee Drinks</li>
-            <li>Coffee</li>
-            <li>Non-Coffee Drinks</li>
-            <li>Bites</li>
+            <a class="sidebar-link smoothScroll" href="#espresso_drinks"><li><h4>Espresso Drinks</h4></li></a>
+            <a class="sidebar-link smoothScroll" href="#blended_espresso"><li><h4>Blended Espresso Shakes</h4></li></a>
+            <a class="sidebar-link smoothScroll" href="#cold_coffee"><li><h4>Cold Coffee Drinks</h4></li></a>
+            <a class="sidebar-link smoothScroll" href="#coffee"><li><h4>Coffee</h4></li></a>
+            <a class="sidebar-link smoothScroll" href="#non_coffee"><li><h4>Non-Coffee Drinks</h4></li></a>
+            <a class="sidebar-link smoothScroll" href="#bites"><li><h4>Bites</h4></li></a>
         </ul>
 
         </div></div><div class="menu-section-wrapper">
+        <a name="espresso_drinks"></a>
         <div class="menu-section">
             <h4 class="menu-header">Espresso Drinks</h4>
             <ul>
@@ -88,7 +90,8 @@
                <p>Espresso with steamed milk, topped with a crown of foam</p>
            </ul> 
        </div>
-       <div class="menu-section">
+       <a name="blended_espresso"></a>
+       <div class="menu-section" id="blended_espresso">
          <h4 class="menu-header">Blended Espresso Shakes</h4>
          <ul>
            <li>Blended Bliss</li>
@@ -103,7 +106,7 @@
            <p>Blended mocha spun with a whole peppermint patty and topped with cream</p>
        </ul> 
    </div>
-   <div class="menu-section">
+   <div class="menu-section" id="cold_coffee">
      <h4 class="menu-header">Cold Coffee Drinks</h4>
      <ul>
        <li>Iced Latte</li>
@@ -119,7 +122,7 @@
        <p>Freshly brewed house coffee, chilled and iced!</p>
    </ul>     
 </div>
-<div class="menu-section">
+<div class="menu-section" id="coffee">
  <h4 class="menu-header">Coffee</h4>
  <ul>
    <li>Coffee</li>
@@ -129,7 +132,7 @@
 </ul>  
 </div>
 <div class="menu-section">
- <h4 class="menu-header">Non-Coffee Drinks</h4>
+ <h4 class="menu-header" id="non_coffee">Non-Coffee Drinks</h4>
  <ul>
    <li>Blended Chai Shake</li>
    <p>Chai Tea blended with lowfat ice milk, topped with whipped cream. Your choice of spiced, vanilla, or chocolate</p>
@@ -158,7 +161,7 @@
    <p>Made with steamed milk, chocolate, and whipped cream. White or Mexican hot cocoa available</p>
 </ul> 
 </div>
-<div class="menu-section">
+<div class="menu-section" id="bites">
     <h4 class="menu-header">Bites</h4>
 
     <h5>Pastries</h5>
@@ -172,6 +175,7 @@
     <h5>Bagels</h5>
     <p>Cream cheese available</p>
 
+</div>
 </div>
 </div>
 
@@ -207,6 +211,8 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>    
+        <script src="js/sidebar.js"></script>
+        <script src="js/smoothscroll.js"></script>
     </body>   
 
     </html>     
