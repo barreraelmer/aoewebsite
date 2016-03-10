@@ -259,17 +259,49 @@ header.navbar {
   height: 100%;
   overflow: hidden;
 }
-
+.menu-sidebar {
+  background-color: #fff;
+}
+.menu {
+  background: url(../assets/menu/rusticCoffee.jpg) no-repeat center center;
+  background-size: cover;
+}
+.menu-section {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+}
+.menu-section-wrapper {
+  max-width: 600px;
+}
+.menu-sidebar, .menu-section-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+.menu-sidebar {
+  background-color: white;
+  height: 500px;
+  width: 300px;
+  z-index: 900;
+  margin: 10px;
+}
 #food-drink{
   font-size: 50px;
   padding-top: 150px;
+}
+.menu-sidebar ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 
 /* Contact page */
 .jumbotron#contact-form {
   background-color: #E8DDBB; 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/contact.png) no-repeat center center;
+  background-size: cover;
   margin-bottom: 0;
+  color: white;
 }
 .contact-wrapper {
   margin: 20px;
@@ -322,20 +354,15 @@ header.navbar {
   min-height: 80vh;
 }
 
-/*Second Hrs and Location*/
-.jumbotron-hrs-second{
-  background: url(../assets/secondHours/seating.JPG);
-  background-size: cover; 
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 /* Footer */
 .footer-wrapper {
   color: #f9f9f9;
   width: 100%;
   background-color: #4a4a4a;
+}
+.footer {
+  max-width: 800px;
+  margin: auto;
 }
 
 
@@ -384,9 +411,39 @@ header.navbar {
   /*background-color: #E8DDBB;*/
 }
 
+/* Hours & location*/
+.row {
+  margin: 0;
+}
+.hours {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/location.png) no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 15px;
+  color: white;
+}
+.hour {
+  display: inline-block;
+  width: 33%;
+}
+@media screen and (max-width: 500px) {
+  .hour {
+    display: block;
+    width: 100%;
+  }
+  .hours {
+    text-align: center;
+  }
+}
+.location {
+}
 #map-container {
-  margin-bottom: 40px;
-  min-height: 500px;
+  padding: 0;
+  margin: auto;
+
+  background: url(http://maps.googleapis.com/maps/api/staticmap?center=32.877601,+-117.239195&zoom=17&scale=2&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:small%7Ccolor:0x000000%7Clabel:1%7C32.877601,+-117.239195) no-repeat center center;
+  background-size: cover;
+  height: 50vh;
 }
 .container-about {
   padding: 0;
