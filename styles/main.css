@@ -259,9 +259,6 @@ header.navbar {
   height: 100%;
   overflow: hidden;
 }
-.menu-sidebar {
-  background-color: #fff;
-}
 .menu {
   background: url(../assets/menu/rusticCoffee.jpg) no-repeat center center;
   background-size: cover;
@@ -273,17 +270,23 @@ header.navbar {
 }
 .menu-section-wrapper {
   max-width: 600px;
+  margin-left: 15px;
 }
-.menu-sidebar, .menu-section-wrapper {
+.sidebar-wrapper, .menu-section-wrapper {
   display: inline-block;
   vertical-align: top;
 }
 .menu-sidebar {
+  margin: 10px;
+}
+.menu-sidebar, .sidebar-wrapper {
   background-color: white;
   height: 500px;
   width: 300px;
   z-index: 900;
-  margin: 10px;
+}
+.sidebar-wrapper {
+  background: transparent;
 }
 #food-drink{
   font-size: 50px;
@@ -293,6 +296,7 @@ header.navbar {
   list-style-type: none;
   padding: 0;
 }
+
 
 
 /* Contact page */
