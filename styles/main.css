@@ -1,10 +1,10 @@
 /* =) */
 
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700);
-
+/*@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700); */
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 body {
   width: 100%;
-  font-family: 'Work Sans', "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Karla', "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin-top: 40px;
 }
 
@@ -365,7 +365,7 @@ header.navbar {
   text-shadow: none;
   line-height: 50px;
   border-top: 2px solid #000;
-  font-size: 28px;
+  font-size: 24px;
   text-align: left;
   padding: 5px;
   padding-top: 12px;
