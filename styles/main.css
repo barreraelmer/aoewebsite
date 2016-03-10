@@ -235,26 +235,31 @@ header.navbar {
 
 .footer {
   vertical-align: top;
+  padding: 5px;
 }
 .footer-heading {
-  margin: 40px 0 0 0; 
+  margin: 10px 0 0 0; 
 }
 .footer-inline {
   display: inline-block;
-  width: 49%;
-  margin: 0.5%;
+  margin: 10px;
+}
+
+
+.footer-content {
+  margin: 0 10px 0 10px;
+  line-height: 1.5;
+  display: inline-block;
 }
 @media screen and (max-width: 600px) {
   .footer-inline {
   display: block;
-  width: 99%;
-  margin: 0.5%;
-} 
-}
 
+} 
 .footer-content {
-  margin: 20px 0 20px 0;
-  line-height: 1.5;
+  margin: 0;
+  width: 100%;
+}
 }
 .wrapper {
   padding: 1%;
@@ -266,6 +271,8 @@ header.navbar {
   align-items: center;
   max-width: 1000px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .vertical-wrap {
   margin: auto;
@@ -320,6 +327,31 @@ body {
   width: 285px;
   z-index: 900;
 }
+.contact-section-wrapper {
+  margin-left: 300px;
+  margin-top: -300px;
+  background-color: #fff;
+  padding: 15px;
+}
+.contact-section-wrapper input, textarea {
+  background-color: #ddd;
+}
+.contact-sidebar {
+  width: 285px;
+  z-index: 900;
+  background-color: #fff;
+  color: #262626;
+  padding: 15px;
+}
+.contact-menu {
+  margin-top: 200px;
+}
+@media screen and (max-width: 700px) {
+
+  .contact-section-wrapper {
+    margin: 0;
+  }
+}
 .menu-sidebar {
   margin: 10px;
   /*padding: 15px;*/
@@ -349,6 +381,14 @@ body {
   font-size: 50px;
   padding-top: 150px;
 }
+.food-drink {
+  font-size: 50px;
+  float: right;
+  padding-top: 100px;
+}
+.hehe {
+  font-size: 20px;
+}
 .menu-sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -358,6 +398,7 @@ body {
   border-bottom: 2px solid #e8ddbb;
 }
 @media screen and (max-width: 850px) {
+
   .menu-sidebar, .sidebar-wrapper {
     width: 225px;
   }
@@ -366,8 +407,23 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
+
+  .dank {
+    line-height: 0.8;
+  } 
+
   .menu-sidebar, .sidebar-wrapper {
     display: none;
+  }
+  #sidebar-contact {
+    display: block !important;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .contact-sidebar {
+    width: 100%;
   }
   .menu {
     padding: 0 !important;
@@ -423,17 +479,26 @@ body {
 }
 
 /* Contact page */
-.jumbotron#contact-form {
+.jumbotron-contact#contact-form {
   background-color: #E8DDBB; 
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/contact.png) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/contact.png) no-repeat center center;
   background-size: cover;
-  margin-bottom: 0;
   color: white;
+  height: 80vh;
+  margin-bottom: -50vh;
 }
 .contact-wrapper {
   margin: 20px;
 }
 
+.jumbotron-contact .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#h1contact {
+  margin-top: 100px;
+  font-size: 50px;
+}
 .phone-email-wrapper, .form-wrapper {
   max-width: 500px;
   margin: auto;
@@ -441,13 +506,16 @@ body {
 .form-wrapper input {
   width: 100%;
 }
+.form-wrapper input[type=text], .form-wrapper textarea {
+  line-height: 35px;
+}
 .form-wrapper textarea#form-msg {
   width: 100%;
 }
 
 .form-wrapper input, .form-wrapper textarea {
   border: none;
-  line-height: 24px;
+  line-height: 35px;
   font-size: 18px;
   padding: 4px;
   margin-top: 5px;
@@ -456,7 +524,7 @@ body {
 
 /*Catering*/
 .jumbotron-catering{
-  background: url(../assets/art_coffee_9170.png) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/art_coffee_9170.png) no-repeat center center;
   background-size: cover; 
   position: relative;
   width: 100%;
@@ -466,9 +534,11 @@ body {
 #contact-form {
   height: auto;
 }
-.jumbotron, .jumbotron-catering, .jumbotron-menu {
-  height: 40%;
-  height: 40vh;
+.jumbotron-contact, .jumbotron-catering, .jumbotron-menu {
+  margin-top: 40px;
+}
+h4 {
+  font-weight: 400;
 }
 
 .how {
@@ -562,6 +632,7 @@ body {
   }
 }
 .location {
+  background-color: white;
 }
 #map-container {
   padding: 0;
