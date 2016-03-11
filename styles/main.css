@@ -288,6 +288,13 @@ body {
 }
 .openmsg {
   width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px;
+}
+.marketing {
+  max-width: 1000px;
+  margin: auto;
 }
 .tile-text {
 }
