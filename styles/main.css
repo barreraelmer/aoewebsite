@@ -207,7 +207,7 @@ header.navbar {
 }
 
 #tile-about {
-  background: url(../assets/staff.jpg) no-repeat center center;
+  background: url(../assets/staff.png) no-repeat center center;
   background-size: cover; 
 }
 #tile-seating {
@@ -307,9 +307,7 @@ body {
 }
 
 /*Food & Drink content*/
-.jumbotron-menu, .jumbotron-catering{
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/menu/2_cups_9088.png) no-repeat center center;
-  background-size: cover; 
+.jumbotron-menu, .jumbotron-catering, .jumbotron-contact, .jumbotron-hours {
   color: #e9e9e9;
   position: relative;
   width: 100%;
@@ -318,6 +316,10 @@ body {
   z-index: -1;
   margin-bottom: -40vh;
   padding: 5px;
+}
+.jumbotron-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/2_cups_9088.png) no-repeat center center;
+  background-size: cover; 
 }
 .menu {
   /*z-index: -5;*/
@@ -355,6 +357,9 @@ body {
   margin-top: -300px;
   background-color: #fff;
   padding: 15px;
+}
+.contact-wrapper {
+  z-index: 900 !important;
 }
 .contact-section-wrapper input, textarea {
   background-color: #ddd;
@@ -555,6 +560,7 @@ body {
 .jumbotron-contact#contact-form {
   background-color: #E8DDBB; 
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/contact.png) no-repeat center center;
+  z-index: -10;
   background-size: cover;
   color: #fff;
   height: 70vh;
@@ -565,7 +571,6 @@ body {
   margin: 10px;
 
 }
-
 #h1contact {
   margin-top: 180px;
   font-size: 50px;
@@ -593,7 +598,6 @@ body {
   margin-bottom: 5px;
   /*background-color: #fff;*/
   /*border: 2px solid #262626;*/
-
 }
 .form-wrapper input[type="submit"] {
   background-color: #bbb !important;
@@ -697,7 +701,7 @@ h4 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/location.png) no-repeat center center;
   background-size: cover;
   margin: 0;
-  color: #fff;
+  /*color: #fff;*/
   height: 80vh;
   margin-bottom: -70vh;
 }
@@ -779,3 +783,8 @@ h4 {
   padding-bottom: 48px !important;
 }
 */
+
+
+.loading {
+  background: #262626 !important;
+}
