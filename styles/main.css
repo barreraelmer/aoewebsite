@@ -24,7 +24,7 @@ ul {
 a:hover {
   color: inherit;
   text-decoration: none;
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 a:visited {
   text-decoration: none;
@@ -123,6 +123,13 @@ header.navbar {
     padding-right: 0;
     font-size: 18px;
     line-height: 36px;
+  }
+  header.navbar, .navbar-inverse, .navbar-header {
+    height: 60px;
+  }
+  .navbar-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   
 }
@@ -275,8 +282,8 @@ header.navbar {
   align-items: center;
   max-width: 1000px;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .vertical-wrap {
   margin: auto;
@@ -288,6 +295,13 @@ body {
 }
 .openmsg {
   width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px;
+}
+.marketing {
+  max-width: 1000px;
+  margin: auto;
 }
 .tile-text {
 }
@@ -375,6 +389,28 @@ body {
   .phone-email-wrapper, .form-wrapper {
     max-width: none !important;
   }
+
+}
+@media screen and (max-device-width: 800px)  {
+  .jumbotron-menu h1 {
+    padding-top: 50px !important;
+  }
+  .jumbotron-menu {
+    min-height: 300px !important;
+  }
+  .jumbotron-contact {
+    height: 200px !important;
+  }
+  .jumbotron-contact h1 {
+    margin-top: 80px !important;
+  }
+  .jumbotron-hours h1 {
+    margin-top: 140px !important;
+  }
+  .jumbotron-catering h1 {
+    padding-top: 40px !important;
+  }
+
 }
 .menu-sidebar {
   margin: 10px;
@@ -481,9 +517,6 @@ body {
     border-bottom: 4px solid #e8ddbb;
   }
 
- /* .menu-section-content ul li:nth-child(1) {
-    margin-top: 0;
-  }*/
   .menu-section-content p {
     color: #808080;
     font-size: 16px;
@@ -495,7 +528,13 @@ body {
   .menu-link:hover {
     cursor: pointer;
   }
+  .menu-header:hover {
+    cursor: pointer;
+  }
 }
+  .menu-header:hover {
+    cursor: pointer;
+  }
 .menu h4 {
     font-weight: 400;
 }
@@ -573,6 +612,12 @@ body {
 }
 .jumbotron-contact, .jumbotron-catering, .jumbotron-menu {
   margin-top: 40px;
+}
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  .jumbotron-contact, .jumbotron-catering, .jumbotron-menu {
+    min-height: 300px !important;
+  }
+
 }
 h4 {
   font-weight: 400;
@@ -728,5 +773,9 @@ h4 {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-
+/*
+.jumbotron {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+*/
