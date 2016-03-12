@@ -1,4 +1,3 @@
-
 wrapper = $(".menu");
 sidebar = $(".menu-sidebar");
 navbar = $(".navbar");
@@ -50,4 +49,3 @@ $(".menu-header").click((event) => {
         $(event.target).addClass("open");
     }
 });
-
