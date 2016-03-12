@@ -701,7 +701,6 @@ h4 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(38, 38, 38, 1)), url(../assets/location.png) no-repeat center center;
   background-size: cover;
   margin: 0;
-  /*color: #fff;*/
   height: 80vh;
   margin-bottom: -70vh;
 }
