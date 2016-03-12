@@ -124,6 +124,13 @@ header.navbar {
     font-size: 18px;
     line-height: 36px;
   }
+  header.navbar, .navbar-inverse, .navbar-header {
+    height: 60px;
+  }
+  .navbar-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   
 }
 .navbar-toggle .icon-bar {
@@ -384,7 +391,7 @@ body {
   }
 
 }
-@media screen and (max-width: 800px) and (orientation:landscape) {
+@media screen and (max-device-width: 800px)  {
   .jumbotron-menu h1 {
     padding-top: 50px !important;
   }
@@ -399,6 +406,9 @@ body {
   }
   .jumbotron-hours h1 {
     margin-top: 140px !important;
+  }
+  .jumbotron-catering h1 {
+    padding-top: 40px !important;
   }
 
 }
@@ -507,9 +517,6 @@ body {
     border-bottom: 4px solid #e8ddbb;
   }
 
- /* .menu-section-content ul li:nth-child(1) {
-    margin-top: 0;
-  }*/
   .menu-section-content p {
     color: #808080;
     font-size: 16px;
