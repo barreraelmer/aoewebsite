@@ -525,6 +525,9 @@ body {
     cursor: pointer;
   }
 }
+  .menu-header:hover {
+    cursor: pointer;
+  }
 .menu h4 {
     font-weight: 400;
 }
