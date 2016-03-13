@@ -621,7 +621,9 @@ body {
   .jumbotron-contact, .jumbotron-catering, .jumbotron-menu {
     min-height: 300px !important;
   }
-
+  .jumbotron-contact {
+    margin-bottom: -40vh !important;
+  }
 }
 h4 {
   font-weight: 400;
