@@ -37,6 +37,6 @@ $(".background").waitForImages(() => {
     $img = $(".background").css('background');
     $('.background').fadeTo(0, 0, () => {
         $(this).css({'background': $img + " !important"});
-    }).fadeTo('slow', 1);
+    }).fadeTo(1000, 1);
     $(".background").removeClass("loading");
 });
