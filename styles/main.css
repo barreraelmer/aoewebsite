@@ -776,14 +776,17 @@ h4 {
   padding-left: 15px;
   padding-right: 15px;
 }
-/*
-.jumbotron {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important;
+.hide {
+  display: none;
 }
-*/
-
-
+.red {
+  color: red;
+}
+@media screen and (min-width: 800px) {
+  .form-wrapper {
+    min-height: 200px;
+  }
+}
 .loading {
   background: #262626 !important;
 }

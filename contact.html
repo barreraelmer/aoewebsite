@@ -80,14 +80,15 @@
             <!-- Mailto email intentionally wrong while in development mode -->
             <h4>We're happy to hear your feedback!</h4>
             <p>For catering, please call us by phone</p>
-            <form action="MAILTO:artofespresso1111@gmail.com" method="post" enctype="text/plain">
+            <p class="hide red">All fields are required</p>
+            <form action="" method="post" enctype="text/plain">
 
-                <input type="text" name="name" placeholder="Your Name"><br>
+                <input class="form-elem" type="text" name="name" placeholder="Your Name"><br>
 
-                <input type="text" name="mail" placeholder="Your Email"><br>
+                <input class="form-elem" type="text" name="email" placeholder="Your Email"><br>
 
-                <textarea name="message" placeholder="Message" id="form-msg"></textarea><br>
-                <input type="submit" value="Send">
+                <textarea class="form-elem" name="message" placeholder="Message" id="form-msg"></textarea><br>
+                <input id="form-submit" type="submit" value="Send">
             </form>
         </div>
         </div>
@@ -104,7 +105,7 @@
                     <h4 class="footer-heading">The Art of Espresso</h4><br>
 
                     <p>9500 Gilman Dr, La Jolla, CA 92093 <br>
-                        <a href="mailto:asdf@gmail.com">artofespresso1@gmail.com</a><br> 
+                        <a href="mailto:barreraelmer@gmail.com">artofespresso1@gmail.com</a><br> 
                         (858) 822-4547<br>
                     </p>
                     </div>
@@ -122,11 +123,11 @@
             </div>
         </div>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/form.js"></script>
 </body>
 
 </html> 
