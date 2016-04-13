@@ -37,7 +37,7 @@ $(window).scroll(() => {
     }
 });
 
-$(document).on('click', '.menu-header', (event) => {
+$(document).on('click', '.menu-link', (event) => {
     alert("clicked");
     content = $(event.target).parent().nextAll(".menu-section-content");
     if ($(window).width() < 700 && $(event.target).hasClass("open")) {
