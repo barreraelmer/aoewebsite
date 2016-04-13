@@ -37,8 +37,8 @@ $(window).scroll(() => {
     }
 });
 
-$(document).on('click', '.menu-link', (event) => {
-    // event.preventDefault();
+$(document).on('click', '.menu-header', (event) => {
+    alert("clicked");
     content = $(event.target).parent().nextAll(".menu-section-content");
     if ($(window).width() < 700 && $(event.target).hasClass("open")) {
         content.css({"display": "none"});
