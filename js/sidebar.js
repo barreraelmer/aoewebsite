@@ -36,8 +36,9 @@ $(window).scroll(() => {
         else $(j[k]).css({"background-color": "#fff"});
     }
 });
-
-$(document).on('click', '.menu-link', (event) => {
+$('.menu-header').css('cursor','pointer');
+$(document).on('click', '.menu-header', (event) => {
+    event.preventDefault();
     alert("clicked");
     content = $(event.target).parent().nextAll(".menu-section-content");
     if ($(window).width() < 700 && $(event.target).hasClass("open")) {

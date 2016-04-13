@@ -537,9 +537,12 @@ body {
     cursor: pointer;
   }
 }
-  .menu-header {
-    cursor: pointer;
-  }
+.menu-header {
+  cursor: pointer;
+}
+.menu-link {
+  cursor: pointer;
+}
 .menu h4 {
     font-weight: 400;
 }
