@@ -531,17 +531,21 @@ body {
     background-color: #f9f9f9;
   }
   .menu-link {
-    cursor: pointer;
+    /*cursor: pointer;*/
+    pointer-events: none;
   }
   .menu-header {
     cursor: pointer;
+    pointer-events: all;
   }
 }
 .menu-header {
   cursor: pointer;
+  pointer-events: all;
 }
 .menu-link {
-  cursor: pointer;
+  /*cursor: pointer;*/
+  pointer-events:none;
 }
 .menu h4 {
     font-weight: 400;

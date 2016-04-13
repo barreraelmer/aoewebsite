@@ -2,7 +2,7 @@ wrapper = $(".menu");
 sidebar = $(".menu-sidebar");
 navbar = $(".navbar");
 // HEEEECKK YEEEEAAAHAHHHHHHH
-$(window).scroll(() => {
+$(window).scroll(function() {
     top_offset = 80;
     mt = ($(".navbar").height() + top_offset).toString() + "px";
     sideheight = $(".sidebar").height();
@@ -36,8 +36,9 @@ $(window).scroll(() => {
         else $(j[k]).css({"background-color": "#fff"});
     }
 });
-$('.menu-header').css('cursor','pointer');
-$(document).on('click', '.menu-header', (event) => {
+// $('.menu-header').css('cursor','pointer');
+// $(document).on('click', '.menu-header', (event) => {
+$('.menu-header').click(function() {
     event.preventDefault();
     alert("clicked");
     content = $(event.target).parent().nextAll(".menu-section-content");

@@ -33,9 +33,9 @@ function update_hours(d) {
 
 $(".background").addClass("loading");
 // Wait for image loads
-$(".background").waitForImages(() => {
+$(".background").waitForImages(function() {
     $img = $(".background").css('background');
-    $('.background').fadeTo(0, 0, () => {
+    $('.background').fadeTo(0, 0, function() {
         $(this).css({'background': $img + " !important"});
     }).fadeTo(1000, 1);
     $(".background").removeClass("loading");
