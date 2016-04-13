@@ -530,14 +530,14 @@ body {
     padding: 0;
     background-color: #f9f9f9;
   }
-  .menu-link:hover {
+  .menu-link {
     cursor: pointer;
   }
-  .menu-header:hover {
+  .menu-header {
     cursor: pointer;
   }
 }
-  .menu-header:hover {
+  .menu-header {
     cursor: pointer;
   }
 .menu h4 {
