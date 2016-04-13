@@ -40,7 +40,6 @@ $(window).scroll(function() {
 // $(document).on('click', '.menu-header', (event) => {
 $('.menu-header').click(function() {
     event.preventDefault();
-    alert("clicked");
     content = $(event.target).parent().nextAll(".menu-section-content");
     if ($(window).width() < 700 && $(event.target).hasClass("open")) {
         content.css({"display": "none"});
